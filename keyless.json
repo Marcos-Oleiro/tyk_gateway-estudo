@@ -1,0 +1,48 @@
+{
+  "enable_context_vars":true,
+  "name": "Keyless HttpBin",
+  "api_id": "10",
+  "org_id": "default",
+  "use_keyless": true,
+  "auth": {
+    "auth_header_name": ""
+  },
+  "version_data": {
+    "not_versioned": true,
+    "versions": {
+      "Default": {
+        "name": "Default",
+        "expires": "3000-01-02 15:04",
+        "use_extended_paths": true,
+        "extended_paths": {
+          "ignored": [],
+          "white_list": [],
+          "black_list": [],
+          "cache": [
+            "get"
+          ],
+          "transform": [],
+          "transform_headers": [
+            {
+              "delete_headers": [
+                "teste"
+              ],
+              "a☺dd_headers": {
+                "x-injected-header1": "$tyk_context.headers_Teste",
+                "x-injected-header2": "2"
+              },
+              "method": "GET"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "proxy": {
+    "listen_path": "/httpbin/",
+    "target_url": "http://httpbin.org",
+    "strip_listen_path": true,
+    "preserve_host_header": true
+  },
+  "enable_batch_request_support": true
+}

@@ -1,0 +1,9 @@
+preserve_host_header -> Mantém o valor do header 'host' da request de entrada (inbound), se for false usa o valor do host de destino
+listen_path -> path que a API vai interceptar a request
+target_url -> URL de destino da request
+strip_listen_path -> retira o caminho contido na propriedade 'listen_path' da url de destino
+enable_load_balancing -> habilitar o load balancing e distribuit o tráfego para uma lista de servidores (tem que preencher o target_list)
+target_list -> lista de servidores alvos (pode ser 1 ou mais)
+check_host_against_uptime_tests -> verificará o nome do host da solicitação de saída em relação à lista de tempo de inatividade gerada pelo verificador de host. Se o host for encontrado, ele será ignorado.
+service_discovery -> descobre para onde enviar a solicitação em caso de clusters
+disable_srip_slash -> permite adicionar uma maneira de desabilitar a remoção do sufixo de barra de um URL

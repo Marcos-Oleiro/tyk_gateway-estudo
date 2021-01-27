@@ -1,0 +1,47 @@
+{
+  "enable_context_vars":true,
+  "name": "Simula Rota Listar",
+  "api_id": "40",
+  "org_id": "default",
+  "use_keyless": true,
+  "auth": {
+    "auth_header_name": ""
+  },
+  "version_data": {
+    "not_versioned": true,
+    "versions": {
+      "Default": {
+        "name": "Default",
+        "expires": "3000-01-02 15:04",
+        "use_extended_paths": true,
+        "extended_paths": {
+          "ignored": [],
+          "white_list": [],
+          "black_list": [],
+          "cache": [
+            "get"
+          ],
+          "transform": [],
+          "transform_headers": [
+            {
+              "delete_headers": [
+                "token-gulpy"
+              ],
+              "add_headers": {
+                "x-token-lista": "$tyk_context.headers_Token_Gulpy"
+              },
+              "method": "GET"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "proxy": {
+    "listen_path": "/listar/",
+    "target_url": "http://httpbin.org",
+    "strip_listen_path": true,
+    "preserve_host_header": true
+  },
+  "enable_batch_request_support": true
+}

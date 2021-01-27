@@ -1,0 +1,21 @@
+// CRIAR A NETWORK
+
+docker network create tyk
+
+// RODAR O REDIS
+
+docker run -itd --rm --network tyk --name redis redis:latest
+
+//  RODAR O TYK GATEWAY
+
+docker run -itd --rm --network tyk --name gateway  -p 8080:8080 -e  TYK_GW_SECRET=12345 -e TYK_GW_STORAGE_HOST=redis -e TYK_HEALTHCHECK_ENABLEHEALTHCHECKS=false -e TYK_GW_COPROCESSOPTIONS_ENABLECOPROCESS=false tykio/tyk-gateway:latest
+
+
+// Rodar o Vault
+
+Export VAULT_ADDR
+
+Copiar 
+
+Unseal Key: DLYclEHr0uFZrMXZCrWtHob96ohBcHnXS3B9Qixbkhg=
+Root Token: s.YNPfXratCw2hXfSKOkFkqVBs
