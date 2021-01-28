@@ -29,7 +29,7 @@
               ],
               "a☺dd_headers": {
                 "x-injected-header1": "$tyk_context.headers_Teste",
-                "x-injected-header2": "2"
+                "x-injected-header2": "$secret_vault_kv_tyk_senha"
               },
               "method": "GET"
             }

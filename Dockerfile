@@ -5,3 +5,5 @@ WORKDIR /opt/tyk-gateway
 RUN rm tyk.conf
 
 COPY ./tyk.conf ./
+
+COPY ./testeMiddleware.js ./middleware/

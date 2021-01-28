@@ -13,9 +13,9 @@ docker run -itd --rm --network tyk --name gateway  -p 8080:8080 -e  TYK_GW_SECRE
 
 // Rodar o Vault
 
-Export VAULT_ADDR
+export VAULT_ADDR="http://127.0.0.1:8200"
 
 Copiar 
 
-Unseal Key: DLYclEHr0uFZrMXZCrWtHob96ohBcHnXS3B9Qixbkhg=
-Root Token: s.YNPfXratCw2hXfSKOkFkqVBs
+Unseal Key: 87+wvm3HJlfSztPAoHnofL7skkkLLF50DJZWcMlPL9M=
+Root Token: s.9hQROk14EP5hvfiNZ2WaCZV8
