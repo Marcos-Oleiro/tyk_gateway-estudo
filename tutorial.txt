@@ -17,5 +17,6 @@ export VAULT_ADDR="http://127.0.0.1:8200"
 
 Copiar 
 
-Unseal Key: 87+wvm3HJlfSztPAoHnofL7skkkLLF50DJZWcMlPL9M=
-Root Token: s.9hQROk14EP5hvfiNZ2WaCZV8
+Unseal Key: sq48zXHjFE9airKD5v1x6S9SzJLgDADaY163yEd+Bps=
+Root Token: root
+
