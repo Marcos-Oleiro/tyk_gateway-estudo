@@ -3,11 +3,8 @@ services:
   redis:
     container_name: redis
     image: redis:latest
-    # networks:
-    #   - tyk1
     networks:
-      static-network:
-        ipv4_address: 172.28.128.2
+      - tyk1
   gateway:
     container_name: gateway
     build:
@@ -16,19 +13,12 @@ services:
     ports:
       - "8666:8081"
     networks:
-      static-network:
-        ipv4_address: 172.28.128.3  
-    # networks:
-    #   - tyk1
+      - tyk1
 
-# networks:
-#   tyk1:
-#     driver: bridge
-#     config:
-#     - subnet: 172.33.0.0/16
 
 networks:
-  static-network:
-    ipam:
-      config:
-        - subnet: 172.28.0.0/16
+  tyk1:
+    driver: bridge
+
+
+
