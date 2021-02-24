@@ -33,6 +33,8 @@ RUN echo "deb https://packagecloud.io/tyk/tyk-gateway/debian/ buster main" | tee
 
 COPY ./tyk.standalone.conf /opt/tyk-gateway/tyk.conf
 COPY ./entrypoint.sh /opt/tyk-gateway/entrypoint.sh
+COPY ./apps /opt/tyk-gateway/apps
+COPY ./middleware /opt/tyk-gateway/middleware
 
 VOLUME ["/opt/tyk-gateway/"]
 

@@ -1,0 +1,21 @@
+{
+  "123456789": {
+    "id":"123456789",
+    "access_rights": {
+      "40": {
+        "api_id": "40",
+        "api_name": "Simula Rota JWT",
+        "versions": [
+          "Default"
+        ]
+      }
+    },
+  "active": true,
+  "name": "Main Policy",
+  "allowance":100,
+  "rate": 100,
+  "per": 1,
+  "expires":-1,
+  "org_id": ""
+  }
+}

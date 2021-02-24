@@ -23,7 +23,7 @@
     "param_name": "",
     "use_cookie": false,
     "cookie_name": "",
-    "auth_header_name": "",
+    "auth_header_name": "Authorization",
     "use_certificate": false,
     "validate_signature": false,
     "signature": {
@@ -102,19 +102,6 @@
         "extended_paths": {
           "cache": [
             "get"
-          ],
-          "transform_headers": [
-            {
-              "delete_headers": [
-                "token-gulpy"
-              ],
-              "add_headers": {
-                "x-injected-header-from-config": "$secret_conf.senha"
-              },
-              "path": "",
-              "method": "GET",
-              "act_on": false
-            }
           ]
         },
         "global_headers": null,
@@ -180,8 +167,8 @@
   "custom_middleware": {
     "pre": [
       {
-        "name": "testeMiddleware",
-        "path": "middleware/testeMiddleware.js",
+        "name": "basicAuthMiddleware",
+        "path": "middleware/basicAuthMiddleware.js",
         "require_session": false,
         "raw_body_only": false
       }

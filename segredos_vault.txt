@@ -3,3 +3,13 @@ engine -> myengine
 path -> user1 {token,token1}
 path -> user2 {token,token2}
 path -> user3 {token,token3}
+
+{
+  "token": "token1"
+}
+{
+  "token": "token2"
+}
+{
+  "token": "token3"
+}

@@ -8,8 +8,9 @@ services:
       - tyk1
     volumes:
       - ./tyk.standalone.conf:/opt/tyk-gateway/tyk.conf
-      - ./apps:/opt/tyk-gateway/apps
       - ./middleware:/opt/tyk-gateway/middleware
+      - ./apps:/opt/tyk-gateway/apps
+      - ./policies:/opt/tyk-gateway/policies
     depends_on:
       - tyk-redis
   tyk-redis:
