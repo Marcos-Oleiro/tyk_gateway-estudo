@@ -1,0 +1,21 @@
+{
+  "allowance": 100,
+  "rate": 100,
+  "per": 1,
+  "expires": -1,
+  "quota_max": -1,
+  "access_rights": {
+    "100": {
+      "api_name": "Auth Token HttpBin API",
+      "api_id": "100"
+    }
+  },
+  "org_id": "",
+  "hmac_enabled": false,
+  "hmac_string": "",
+  "is_inactive": false,
+  "jwt_data":{
+      "secret":"tyk123"
+  }
+  
+}

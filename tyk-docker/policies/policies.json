@@ -2,9 +2,9 @@
   "123456789": {
     "id":"123456789",
     "access_rights": {
-      "40": {
-        "api_id": "40",
-        "api_name": "Simula Rota JWT",
+      "100": {
+        "api_id": "100",
+        "api_name": "Simula Rota com JWT",
         "versions": [
           "Default"
         ]
@@ -19,3 +19,5 @@
   "org_id": ""
   }
 }
+// dHlrMTIz
+// tyk123

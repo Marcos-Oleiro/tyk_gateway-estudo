@@ -1,16 +1,14 @@
 {
   "enable_context_vars": true,
-  "name": "Simula Rota JWT",
-  "api_id": "40",
+  "name": "Simula Rota com JWT",
+  "api_id": "100",
   "org_id": "",
   "use_basic_auth": false,
   "use_keyless": false,
   "use_oauth2": false,
   "enable_jwt": true,
   "jwt_signing_method":"hmac",
-  "jwt_source":"tyk123",
   "jwt_identity_base_field":"clientid",
-  "jwt_policy_field_name":"123456789",
   "auth": {
       "auth_header_name": "Authorization" 
   },
